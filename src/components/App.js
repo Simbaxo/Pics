@@ -8,8 +8,10 @@ class App extends React.Component {
       params: { query: term },
       headers: {
         Authorization:
-          'Client-ID '
+          'Client-ID 73fc84f6456109965f1e63c930c072a250f0ba46fcec69b376ce49e14c47857c'
       }
+    }).then((response) => {
+      console.log(response.data.results)
     })
   }
 
